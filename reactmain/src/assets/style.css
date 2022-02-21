@@ -1,0 +1,172 @@
+.font-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+}
+
+button {
+  background-color: #fa6509;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.9s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inputheadings {
+  border: rgb(238, 235, 235);
+  height: 35px;
+  background-color: #fa6509;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  font-family: 'Poppins';
+}
+
+.headings {
+  border: rgb(238, 235, 235);
+  height: 35px;
+  background-color: #fa6509;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  font-family: 'Poppins';
+}
+
+hr {
+  border-color: rgb(174, 177, 180);
+}
+
+/* output boxes */
+.outputbox {
+  display: inline-block;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 4px;
+}
+
+.outputboxchange:hover {
+  background-color: rgb(245, 239, 239);
+}
+
+/* FSI table */
+#FSItable {
+  font-size: 14px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#FSItable td,
+#FSItable th {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+}
+
+/* #FSItable tr:nth-child(even){background-color: #f6f3f3;} */
+
+#FSItable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  /* background-color: #04AA6D;
+  color: rgb(5, 5, 5); */
+}
+
+/* Plot Areas */
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  padding: 5px 0px 0px 5px;
+}
+
+/* custom checkboxes */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15.5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(235, 230, 230);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #1d2329;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
