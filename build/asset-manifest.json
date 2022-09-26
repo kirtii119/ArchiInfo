@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/static/js/main.2badbccd.js",
+    "static/media/4775-min-1.jpg": "/static/media/4775-min-1.4091ad45e864ca2a7506.jpg",
+    "static/media/builder-architect.jpeg": "/static/media/builder-architect.6a2e0e91cd3ba1628d76.jpeg",
+    "index.html": "/index.html",
+    "main.2badbccd.js.map": "/static/js/main.2badbccd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2badbccd.js"
+  ]
+}

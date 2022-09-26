@@ -1,0 +1,25 @@
+{
+  "homepage": "http://kirtii119.github.io/Archiinfo",
+  "name": "archi_fsi_main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "build:dash": "rm -rf build && cd reactmain && npm run build && cd .. && cp -r reactmain/build ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.25",
+    "mysql": "^2.18.1"
+  }
+}
